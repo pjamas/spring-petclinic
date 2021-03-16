@@ -1,24 +1,29 @@
 James Trieu 1151746
 
-# PetClinic [50 pts]
+# Deliverables [50 pts]
 
-- [5 pts] Your Github account showing that is has been forked from the depaulcdm/springpetclinic repository.
-![repo fork](images/fork.png)
-- [5 pts] Your Travis CI dashboard showing a successful first build.
-![travis dashboard #0](images/travis_build1.png)
-- [5 pts] The section of the POM file showing the coordinates after you’ve changed them.
-![pom coordinates #1](images/pom_groupId1.png)
-- [5 pts] Your Travis CI dashboard showing a successful build after your change of the group ID.
-![travis dashboard #1](images/travis_groupId1.png)
-- [5 pts] The section of the POM file showing the coordinates after you’ve commented them out.
-![pom coordinates #2](images/pom_groupId2.png)
-- [5 pts] Your Travis CI dashboard showing the unsuccessful build after the breaking change.
-![travis dashboard #2](images/travis_groupId2.png)
-- [5 pts] Your Github repository with the readme.md file selected showing the build failed status after the Travis CI build fails.
-![readme fail](images/readme_fail.png)
-- [5 pts] The section of the POM file showing the coordinates after you’ve fixed them.
-![pom coordinates #3](images/pom_groupId3.png)
-- [5 pts] Your Travis CI dashboard showing the successful build after the breaking change has been fixed.
-![travis dashboard #3](images/travis_groupId3.png)
-- [5 pts] Your Github repository with the readme.md file selected showing the build success status after the Travis CI build has recovered.
-![readme success](images/readme_success.png)
+## DOCKER
+- [5 pts] Your dockerfile. Please provide a link to this file rather than a screen capture.
+>- [Dockerfile](Dockerfile)
+- [5 pts] Your running docker instance as shown by a ps command.
+![docker instance](images/docker_instance.png)
+- [5 pts] Your browser accessing the main page of the website from your local container.
+![website main](images/docker_website.png)
+
+## DOCKER COMPOSE - MYSQL ONLY
+- [5 pts] The output from the docker-compose up command.
+![docker up mysql](images/docker_up1.png)
+- [5 pts] Your browser accessing the "Veterinarians" page of the website from your local container when you run the application from the host system.
+![website veterinarians #1](images/docker_website-vet1.png)
+- [5 pts] A section of the stack trace generated when you attempt to run the application container that has been updated to use MySQL.
+![docker mysql stack](images/docker_stack.png)
+
+## DOCKER COMPOSE - APP SERVER & MYSQL
+- [5 pts] Your updated docker-compose.yml file containing the application serer, built from your local Dockerfile, and the existing MySQL configuration. Please provide a link to this file rather than a screen capture.
+>- [docker-compose.yml](docker-compose.yml)
+- [5 pts] Your updated application-mysql.properties file containing the URL change for the database server. Please provide a link to this file rather than a screen capture.
+>- [application-mysql.properties](\src\main\resources\application-mysql.properties)
+- [5 pts] The output from the docker-compose up command.
+![docker up server](images/docker_up2.png)
+- [5 pts] Your browser accessing the "Veterinarians" page of the website from your local container.
+![website veterinarians #2](images/docker_website-vet2.png)
