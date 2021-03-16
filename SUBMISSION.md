@@ -22,7 +22,7 @@ James Trieu 1151746
 - [5 pts] Your updated docker-compose.yml file containing the application serer, built from your local Dockerfile, and the existing MySQL configuration. Please provide a link to this file rather than a screen capture.
 >- [docker-compose.yml](docker-compose.yml)
 - [5 pts] Your updated application-mysql.properties file containing the URL change for the database server. Please provide a link to this file rather than a screen capture.
->- [application-mysql.properties](\src\main\resources\application-mysql.properties)
+>- [application-mysql.properties](/src/main/resources/application-mysql.properties)
 - [5 pts] The output from the docker-compose up command.
 ![docker up server](images/docker_up2.png)
 - [5 pts] Your browser accessing the "Veterinarians" page of the website from your local container.
